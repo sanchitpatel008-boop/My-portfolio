@@ -311,29 +311,6 @@
         }
 
         /* A class for the responsive circular container */
-        .circular-image-container {
-            /* Use percentage for width relative to its parent container */
-            width: 50%; 
-            /* Set a maximum size to prevent it from getting too large on big screens */
-            max-width: 200px;
-            /* To maintain aspect ratio and make it a perfect circle (requires JS or a height hack if width changes) */
-            /* A common pure CSS hack for aspect ratio: */
-            padding-bottom: 50%; /* This makes the height equal to the width */
-            position: relative;
-            
-            border-radius: 50%;
-            overflow: hidden;
-            margin: 10px auto; /* Centers the div horizontally */
-        }
-
-        .circular-image-container img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Ensures image covers the entire area without stretching */
-        }
 
         /* ========================================
         8. WORK GRID (The Proof)
@@ -520,10 +497,6 @@
         <section class="section-philosophy" id="philosophy">
             <div class="container philosophy-grid">
                 <div class="uppercase secondary-text" data-scroll>Philosophy</div>
-                <div class="circular-image-container">
-                   <!-- Replace 'jpeg-optimizer_9369.jpeg' with the path to your actual image file -->
-                   <img src="jpeg-optimizer_9369.jpeg" alt="A philosophical image placeholder">
-                </div>
                 <div class="philosophy-content">
                     <p class="lead-paragraph" data-scroll>
                         "The best editing is felt, not seen. My job is to protect the audience from the mechanics of filmmaking so they can connect with the soul of the story."
